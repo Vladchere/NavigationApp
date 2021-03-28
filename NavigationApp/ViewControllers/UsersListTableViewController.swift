@@ -9,8 +9,10 @@ import UIKit
 
 class UsersListTableViewController: UITableViewController {
 
-	var users = ["Rick", "Morty"]
+	// MARK: - Private property
+	private var users = ["Rick", "Morty"]
 
+	// MARK: - Life cycle methods
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -47,7 +49,12 @@ class UsersListTableViewController: UITableViewController {
 
 	@IBAction func unwindSegue(segue: UIStoryboardSegue) {
 		guard let userManagerVC = segue.source as? UserManagerViewController else { return }
+		var name = ""
 
-		users.append(userManagerVC.userNameTextField.text  ?? "No name")
+		if let text = userManagerVC.userNameTextField.text {
+			name = (text == "") ? "No name" : text
+		}
+
+		users.append(name)
 	}
 }

@@ -8,14 +8,16 @@
 import UIKit
 
 class UserDetailsViewController: UIViewController {
-	
+
+	// MARK: - IB Outlet
 	@IBOutlet weak var userNameLabel: UILabel!
 
+	// MARK: - Public property
 	var userName: String!
 
+	// MARK: - Life cycle method
     override func viewDidLoad() {
         super.viewDidLoad()
-
 		userNameLabel.text = userName
     }
 

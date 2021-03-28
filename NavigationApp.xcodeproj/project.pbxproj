@@ -41,6 +41,43 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8650AC4D2610ABAF000EE621 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				866304B1260D18BB00026A8A /* UsersListTableViewController.swift */,
+				86DCF1E3260BABA700ED8A88 /* UserDetailsViewController.swift */,
+				86DCF1E6260BABCF00ED8A88 /* UserManagerViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8650AC4E2610ABD4000EE621 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				86EB8A7D260B9459007B75B8 /* LaunchScreen.storyboard */,
+				86EB8A78260B9459007B75B8 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		8650AC502610ABF8000EE621 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				86EB8A7B260B9459007B75B8 /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		8650AC512610AD82000EE621 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				86EB8A72260B9459007B75B8 /* AppDelegate.swift */,
+				86EB8A74260B9459007B75B8 /* SceneDelegate.swift */,
+				86EB8A80260B9459007B75B8 /* Info.plist */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
 		86EB8A66260B9459007B75B8 = {
 			isa = PBXGroup;
 			children = (
@@ -60,15 +97,10 @@
 		86EB8A71260B9459007B75B8 /* NavigationApp */ = {
 			isa = PBXGroup;
 			children = (
-				86EB8A72260B9459007B75B8 /* AppDelegate.swift */,
-				86EB8A74260B9459007B75B8 /* SceneDelegate.swift */,
-				866304B1260D18BB00026A8A /* UsersListTableViewController.swift */,
-				86DCF1E3260BABA700ED8A88 /* UserDetailsViewController.swift */,
-				86DCF1E6260BABCF00ED8A88 /* UserManagerViewController.swift */,
-				86EB8A7D260B9459007B75B8 /* LaunchScreen.storyboard */,
-				86EB8A78260B9459007B75B8 /* Main.storyboard */,
-				86EB8A7B260B9459007B75B8 /* Assets.xcassets */,
-				86EB8A80260B9459007B75B8 /* Info.plist */,
+				8650AC512610AD82000EE621 /* SupportingFiles */,
+				8650AC4D2610ABAF000EE621 /* ViewControllers */,
+				8650AC4E2610ABD4000EE621 /* Storyboards */,
+				8650AC502610ABF8000EE621 /* Sources */,
 			);
 			path = NavigationApp;
 			sourceTree = "<group>";
@@ -296,7 +328,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D28YKYJC2T;
-				INFOPLIST_FILE = NavigationApp/Info.plist;
+				INFOPLIST_FILE = NavigationApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D28YKYJC2T;
-				INFOPLIST_FILE = NavigationApp/Info.plist;
+				INFOPLIST_FILE = NavigationApp/SupportingFiles/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
